@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="styleSheet" href="main_aboutMe.css">
+		<title>My Projects</title>
+		<meta charset="utf-8">
+		<meta name="description" content="my projects">
+		<meta name="keywords" content="zarni,projects,mile bornes card,reminder,tic-tac-toe,customer-relations-management,android, MIPS" >
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#ss1_f").click(function(){
+					$("#ss1_p").slideToggle("slow");
+				});
+			});
+			$(document).ready(function(){
+				$("#des1_f").click(function(){
+					$("#des1_p").slideToggle("slow");
+					$("#des1_p").loadDoc();
+				});
+			});
+			$(document).ready(function(){
+				$("#proj_1").hover(function(){
+					$("#pro_nam_1").html("Click here to get more information.")
+					$("#more_info_1").show();
+				}, function(){
+					$("#more_info_1").hide();
+					$("#pro_nam_1").html("Mile Bornes Card game in Java.")
+				})
+			});
+			
+			$(document).ready(function(){
+				$("#ss2_f").click(function(){
+					$("#ss2_p").slideToggle("slow");
+				});
+			});
+			$(document).ready(function(){
+				$("#des2_f").click(function(){
+					$("#des2_p").slideToggle("slow");
+				});
+			});
+			$(document).ready(function(){
+				$("#proj_2").hover(function(){
+					$("#pro_nam_2").html("Click here to get more information.")
+					$("#more_info_2").show();
+				}, function(){
+					$("#more_info_2").hide();
+					$("#pro_nam_2").html("Reminder mobile application <br>for android OS in Java with Android Studio")
+				})
+			});
+
+			$(document).ready(function(){
+				$("#ss3_f").click(function(){
+					$("#ss3_p").slideToggle("slow");
+				});
+			});
+			$(document).ready(function(){
+				$("#des3_f").click(function(){
+					$("#des3_p").slideToggle("slow");
+				});
+			});
+			$(document).ready(function(){
+				$("#proj_3").hover(function(){
+					$("#pro_nam_3").html("Click here to get more information.")
+					$("#more_info_3").show();
+				}, function(){
+					$("#more_info_3").hide();
+					$("#pro_nam_3").html("Tic-tac-toe game in MIPS programming language")
+				})
+			});
+
+			$(document).ready(function(){
+				$("#ss4_f").click(function(){
+					$("#ss4_p").slideToggle("slow");
+				});
+			});
+			$(document).ready(function(){
+				$("#des4_f").click(function(){
+					$("#des4_p").slideToggle("slow");
+				});
+			});
+			$(document).ready(function(){
+				$("#proj_4").hover(function(){
+					$("#pro_nam_4").html("Click here to get more information.")
+					$("#more_info_4").show();
+				}, function(){
+					$("#more_info_4").hide();
+					$("#pro_nam_4").html("Customer-Relations-Management application")
+				})
+			});
+
+			
+
+		</script>
+		<script>
+		function loadDoc(){
+				var xttp;
+				if (window.XMLHttpRequest) {
+				// code for modern browsers
+				xhttp = new XMLHttpRequest();
+				} else {
+				// code for IE6, IE5
+				xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+				}
+
+				xttp.onreadystatechange = function (){
+					if (xhttp.readyState == 4 && xhttp.status == 200){
+						document.getElementById("test").innerHTML = xhttp.responseText;
+					}
+					else if (xhttp.readyState == 4){
+						alert("could't find your resource");
+					}
+				}
+			};
+			xhttp.open("GET","proj_1.txt",true);
+			xhttp.send();
+		</script>
+	</head>
+	<body onunload="myfoo()">
+		<header>
+			<h1>My Projects</h>
+		</header>
+		<nav>
+			<ul>
+					<li id="nav_li"><a id="navBut" href="main_aboutMe.html">Home</a></li>
+					<li id="nav_li"><a id="navBut" href="education.html">myEducation </a></li>
+					<li id="nav_li"><a id="navBut" href="workExperiences.html">myWorkExperiences </a></li>
+					<li id="nav_li"><a id="navBut" href="myProjects.html">myProjects </a></li>
+			</ul>
+		</nav>
+		<main id="pro_main">
+			<p>
+				<ul>
+					<li id="proj_1"><a id="pro_nam_1">Mile Bornes Card game in Java</a>
+					<div id="more_info_1">
+					
+					<button id="ss1_f">screenshots</button>
+					<button id="des1_f" onclick="loadDoc()">description </button>
+					</div>
+					<div id="ss1_p"> <img src="images/MileBornes_1.jpg" alt="MileBornes_1" widthe="100" height="100"> 
+									 <img src="images/MileBornes_2.jpg" alt="MileBornes_2" widthe="100" height="100">
+					</div>
+					<div id="des1_p">description</div>
+					</li>
+
+					<li id="proj_2"><a id="pro_nam_2">Reminder mobile application
+					<br>for android OS in Java with Android Studio</a>
+					<div id="more_info_2">
+						<button id="ss2_f">screenshots</button>
+						<button id="des2_f">description</button>					
+					</div>
+					<div id="ss2_p"> <img src="images/reminder_1.jpg" alt="reminder_1" widthe="100" height="100"> 
+									 <img src="images/reminder_2.png" alt="reminder_2" widthe="100" height="100">
+					</div>
+					<div id="des2_p">description</div>
+					</li>		
+					
+					<li id="proj_3"><a id="pro_nam_3">Tic-tac-toe game in MIPS programming language</a>
+					<div id="more_info_3">
+					<button id="ss3_f">screenshots</button>
+					<button id="des3_f">description</button>						
+					</div>
+					<div id="ss3_p"> <img src="images/ttt_1.png" alt="ttt_1" widthe="100" height="100"> 
+									 <img src="images/ttt_2.jpg" alt="ttt_2" widthe="100" height="100">
+					</div>
+					<div id="des3_p">description</div>
+					</li>
+
+					<li id="proj_4"><a id="pro_nam_4">Customer-Relations-Management application
+					<br> for android OS in Java with Android Studio <br>(Group work as four group members)</a>
+					<div id="more_info_4">
+						<button id="ss4_f">screenshots</button>
+						<button id="des4_f">description</button>			
+					</div>
+					<div id="ss4_p"> <img src="images/CRM_1.jpg" alt="CRM_1" widthe="100" height="100"> 
+									 <img src="images/CRM_2.png" alt="CRM_2" widthe="100" height="100">
+					</div>
+					<div id="des4_p">description</div>
+					</li>
+
+					<li><a>Other mini projects in C++, Java, Python and MIPS</a></li>
+				</ul>
+			</p>
+		</main>
+		<footer id="myCont">
+			<h3 id="cont_head">Contact Info:</h3>
+			<ul>
+				<li id="cont"><a id="con_link" href="https://www.facebook.com"><img id="fb_ico" src="images/fb_icon.jpg" alt="facebook_icon" widthe="25" height="25"> Facebook</a><br><br>
+				</li>
+				<li id="cont"><a id="con_link" href="https://www.instagram.com"><img id="fb_ico" src="images/ig_icon.jpg" alt="instagram_icon" widthe="25" height="25"> Instagram</a>
+				</li>
+				<li id="cont"><p id="con_link"><img id="fb_ico" src="images/email_icon.jpeg" alt="email_icon" widthe="23" height="23"> : abcdefg@gmail.com </p>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>
+
+
+

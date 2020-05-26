@@ -1,0 +1,120 @@
+body{
+	margin: 100px 100px 100px 100px;
+}
+
+html{
+	background: url(images/blue_marble_BG.jpg) no-repeat center center fixed; 
+ 	background-size: cover;
+}
+
+header{
+	padding-bottom: .75em;
+	border-bottom: 3px sloid black;
+	margin-bottom: 0;
+}
+
+h1{
+	font-size: 250%;
+	//color: white;
+}
+
+nav{
+	position: static;
+	display: block;
+	border: 2px solid black;
+	padding: 8px; 
+	background-image: url("images/binary_code.jpg");
+	text-align: right; 
+}
+
+#nav_li{
+	display: inline;
+}
+
+#navBut{ border-style: outset; padding: 10px 10px 10px 10px;}
+
+#navBut:link {color: white;}
+#navBut:visited {color: white;}
+#navBut:hover{color: cornflowerblue}
+
+#con_link:link {color: white;}
+#con_link:visited {color: white;}
+#con_link:hover{color: #007BB7;}
+
+footer{
+	position: static;
+	border: 3px solid black;
+	padding: 1px 1px 1px 1px;
+	background-image: url("images/contact_BG.jpg")
+}
+
+#myCont{
+	color: white;
+}
+#cont{ list-style-type: none;
+		margin: 5;
+		padding: 0;
+		text-align: left;
+}
+
+#ico{vertical-align: sub;}
+
+.about_main{
+	background-image: url("images/about_me_BG.jpeg");
+	background-color: white;
+	background-attachment: fixed;
+}
+#myProf{ color: black;
+		
+}
+#myBio{ color: black; 
+	text-align: left;
+	font-size: 130%;
+}
+
+#edu_main{
+	background-image: url("images/edu_BG_1.jpeg");
+	background-color: white;
+	background-size: 100%;
+	background-attachment: static;
+	background-repeat: no-repeat;
+}
+#edu_pic{
+	margin: 2em 2em 2em 2em;
+}
+#edu_text{
+	font-size: 130%;
+	margin: 2em 2em 2em 2em;
+	padding-bottom: 2em;
+}
+
+.work_main{
+	background-image: url("images/work_BG.jpg");
+	background-color: white;
+	background-size: 100%;
+	background-attachment: static;
+	background-repeat: no-repeat;
+	font-size: 120%;
+	padding: 25ex 5px 5px 5px;
+}
+
+#pro_main{
+	background-image: url("images/pro_BG.jpg");
+	background-color: #007BB7;
+	background-size: 100%;
+	background-attachment: static;
+	background-repeat: no-repeat;
+	font-size: 130%;
+	padding: 25ex 5ex 25ex 5ex;
+}
+
+.black{ color: black}
+.white{ color: whitesmoke}
+
+#ss1_p, #des1_p, #ss2_p, #des2_p, #ss3_p, #des3_p, #ss4_p, #des4_p{
+	padding: 10px;
+	display: none;
+}
+#more_info_1, #more_info_2, #more_info_3, #more_info_4{
+	display: none;
+}
